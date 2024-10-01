@@ -30,13 +30,20 @@ main {
         
             width: 100%;
             min-height: 50px;
-            background-image:url(LogoSmall.png);
+            background-image: url("../images/LogoSmall.png");
             background-repeat: no-repeat;
             background-size: contain;
-            background-position: top right;
+            background-position: right top;
                 
         }
-     }
+        main {
+            img {
+                max-width: 33%;
+                max-height: auto;
+            }
+
+        }
+    }
         
         
 
@@ -90,9 +97,10 @@ main {
                 
                 width: 100%;
                 min-height: 100px;
-                background-image:url(LogoLarge.png);
+                background-image:url("../images/LogoLarge.png");
                 background-repeat: no-repeat;
                 background-size: contain;
+                background-position: right top;
 
                 }
 
@@ -100,6 +108,15 @@ main {
             background-color: maroon;
             color: moccasin;
             font-family: 'Times New Roman', Times, serif;
+        
+            }
+
+        main {
+                img {
+                    max-width: 12%;
+                    max-height: auto;
+                }
+    
             }
 
     }
