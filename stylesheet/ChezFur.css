@@ -9,17 +9,44 @@ Example:
 
 body {
     /** rule here**/
-    background-color: peru;
-    color: bisque;
+    /* The colors all come from Adobe color accessibility swatch tool. Additionally, I used their contrast tool to pick 
+    additional colors that looked nicely on backdrops I chose. I added additional colors beyond my forum post after testing -JAB 10/6 */
+    /* using these tools, I was able to get contrast ratios closer to 4.99 : 1, well above suggested ratio */
+
+    background-color: #DCF06F;
+    color: #1A5FB6;
     font-family: Arial, Helvetica, sans-serif;
     }
 
 main {
-    background-color: saddlebrown;
-    color: gainsboro;
+    background-color: #E6F0F8;
+    color: #786422;
     }
 
-    
+aside {
+    background-color: #99E0A3;
+    color: #0A5F2E;
+    }
+
+/* These currently only are being used on the Menu page for now. */
+ul {
+    list-style-type: none;
+    }
+
+li {
+    font-size: 1.25em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    font-style: italic;
+}
+/* These currently only are being used on the Menu page for now. */
+
+
     /**********************************************************
     Enter special rules that apply to ALL SMALL SCREENS ONLY below.
     Use a logical order!
@@ -36,13 +63,16 @@ main {
             background-position: right top;
                 
         }
-        main {
-            img {
-                max-width: 33%;
-                max-height: auto;
-            }
+       
 
-        }
+        img {
+            max-width: 33%;
+            max-height: auto
+          }
+        /* these currently only are being used on the Your Hosts page for now */
+
+
+        /* these currently only are being used on the Your Hosts page for now */
     }
         
         
@@ -104,19 +134,89 @@ main {
 
                 }
 
+/* The colors all come from Adobe color accessibility swatch tool. Additionally, I used their contrast tool to pick 
+    additional colors that looked nicely on backdrops I chose. I added additional colors beyond my forum post after testing -JAB 10/6 */
+/* using these tools, I was able to get contrast ratios closer to 4.99 : 1, well above suggested ratio */
+
         body {
-            background-color: maroon;
-            color: moccasin;
+            background-color: #A2A3F5;
+            color: #3F3A0B;
             font-family: 'Times New Roman', Times, serif;
         
             }
 
-        main {
-                img {
-                    max-width: 12%;
-                    max-height: auto;
-                }
-    
-            }
 
+        img {
+                max-width: 33%;
+                max-height: auto;
+
+              }
+            /* these currently only are being used on the Your Hosts page for now */
+
+
+
+        /* these currently only are being used on the Your Hosts page for now */
     }
+
+
+/*  CUSTOM CLASSES DEV AREA */
+
+.cursive-center {
+    font-family:cursive;
+    text-align: center;
+
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* free to use, from https://www.publicdomainpictures.net/en/view-image.php?image=488603&picture=parchment-paper-background-texture */
+
+.menu-paper {
+       background-image: url(../images/menu.jpg);
+       background-color: #cccccc;
+       width: 80%;
+       color: black;
+}
+
+.hosts-format {
+    img {
+        max-width: 180px;
+        max-height: 180px;
+        border-radius: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    text-align: center;
+    font-weight: bold;
+}
+
+.host-container {
+    border-radius: 10px;
+    width: 90%;
+    background-color: #DCF06F;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+/* will affect navbar links/appearance */
+
+.navbar {
+
+    a:link  {
+            color: black;
+        }
+
+    a:visited {
+        color: #790000;
+    }
+
+    a:hover {
+        font-size: larger;
+    }
+}
+/*  CUSTOM CLASSES DEV AREA */

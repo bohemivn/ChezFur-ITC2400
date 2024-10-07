@@ -5,13 +5,20 @@
         <title>Chez Fur</title>
         <link rel="stylesheet" href="stylesheet/ChezFur.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+                #inlineheader {
+                        font-family: "Brush Script MT", cursive;
+                
+                }
+        </style>
 	</head>
 	
 	<body>
                 <header>
-                        <h1>Chez Fur (Placeholder Heading)</h1>       
+                        <h1 id="inlineheader">Chez Fur (Placeholder Heading)</h1>       
                 </header>
-                <nav>
+                <nav class="navbar">
                         <a href="index.html">Home</a> |
                         &nbsp;
                         <a href="menu.html">Menu</a> |
@@ -22,18 +29,51 @@
                 </nav>
 
         <main>
-        <img src="images/catmenu.jpeg" alt="cats surrounding menus" class="responsive">
-         <h2>Food and Drink</h2>   
-                <ul style="list-style-type:disc;">
-		<li>Nibbles</li>
-		<li>Fancy Feasts</li>
-		<li>Treats</li>
-                <li>Drink</li>
-	        </ul>
-                    <footer>
-                    <p>Copyright &copy; 2024 Suzy Schaffer </p>
-                    <a href="mailto:fake@thisisnotarealcatcafe.com">fake@thisisnotarealcatcafe.com</a>   
-                    </footer>
+        <img src="images/catmenu.jpeg" alt="cats surrounding menus" class="responsive">   
+                <aside> <p>Enjoy our food while you visit with our friendly hosts! We have selections for
+                        appetites big and small.</p>
+                </aside>
+		<section class="menu-paper">
+                <h1 class="cursive-center">Menu</h1>
+                <ul>
+                        <li>Nibbles</li>
+                        <dl>
+                        <dt>Meowzarella Sticks</dt>
+                        <dd>Breaded & fried mozzarella cheese, shaped with cat ears. Served with our house (GF) marinara sauce. $9</dd>
+                        <dt>Zucchini Snackers</dt>
+                        <dd>A tasty vegan alternative to fried mozzarella. Our cats in the kitchen regret to inform you that they could 
+                                not shape the zucchini into anything fun. Served with our house (GF) marinara sauce. $14 </dd>
+                        </dl>
+		        <li>Fancy Feasts</li>
+                        <dl>
+                        <dt>Trottin' Tuna Melt</dt>
+                        <dd>Melted American cheese on top of the tuna salad,served on toasted bread. Any cat who smells this will come trottin'! 
+                                Served with a pickle and our vegan (GF) fries. $18</dd>
+                        <dt>Black Bean Burger</dt>
+                        <dd>Vegan and GF patty, topped with lettuce tomato & our house aioli. Served with our vegan (GF) fries. $16 </dd>
+                        </dl>
+		        <li>Treats</li>
+                        <dl>
+                        <dt>Chocolate Mewffin</dt>
+                        <dd> Sorry - we couldn't resist. Muffin stuffed to the brim with chocolate chips, decorated to look like a cat's face on top. $12 </dd>
+                        <dt><b>Purrpcorn</b></dt>
+                        <dd>Tasty kettle-cooked popcorn, drizzled with a combo of milk and white chocolate. $8 </dd>
+                        </dl>
+                        <li>Drink</li>
+                        <dl>
+                        <dt>Lounge Lemonade</dt>
+                        <dd>Refreshing, freshly-made. A house favorite for good reason. $5 </dd>
+                        <dt>Local Brew</dt>
+                        <dd>Freshly ground beans sourced from one of our local partners. ask for 'Chez style' for extra cream $4 </dd>
+                        </dl>
+                </ul>
+                <p class="warning">WARNING: We typically cook utilizing peanut oil- please talk to staff ahead of time to avoid its usage.</p>
+                </section>
+
+                <footer>
+                <p>Copyright &copy; 2024 Suzy Schaffer </p>
+                <a href="mailto:fake@thisisnotarealcatcafe.com">fake@thisisnotarealcatcafe.com</a>   
+                </footer>
         </main>
 	
 	</body>
