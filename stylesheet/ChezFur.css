@@ -64,20 +64,6 @@ dd {
                 
         }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-          }
-          
-        li {
-            display: inline-block;
-            width: 85px;
-            margin: 2px;
-            font-size: 1.40em;
-            text-align: center;
-            padding-bottom: 10px;
-          }
 
         img {
             max-width: 33%;
@@ -92,6 +78,43 @@ dd {
             border-radius: 30px;
         }
 
+        figure{
+
+         img {
+            max-width: 50px;
+            height: auto
+        }
+        } 
+
+       /* new nav small screen formatting 10/20 */
+            nav a {
+            width: 85px;
+            height: 100px;
+            margin: 2px;
+            font-size: 1.40em;
+            text-align: center;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            }
+
+
+         .navcontainer {
+                display: flex;
+                flex-direction: row;
+                
+            } 
+
+        .wrapper {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        
+            main {
+                margin-top: 10px;
+            }
+    
         /* these are now being used by all pages 10-13 */
     }
         
@@ -166,7 +189,7 @@ dd {
             padding-left: 750px;
         }
 
-        /* MENU PAGE COLUMNS-NOT FLEXBOX*/
+
         header {
             
                 
@@ -182,8 +205,37 @@ dd {
         footer {
                 clear: both;
                 text-align: center;
+
         }
 
+        /* new nav big screen formatting 10/20. Flexbox not working */
+        nav a {
+            width: 100px;
+            background-color: #E6F0F8;
+            margin-bottom: 5px;
+            font-size: 1.50em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+                }
+        
+        .navcontainer {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }    
+        
+        .wrapper {
+            display: flex;
+            
+            
+        }
+        main {
+            height: 100vh;
+            overflow: scroll;
+
+        }
 /* The colors all come from Adobe color accessibility swatch tool. Additionally, I used their contrast tool to pick 
     additional colors that looked nicely on backdrops I chose. I added additional colors beyond my forum post after testing -JAB 10/6 */
 /* using these tools, I was able to get contrast ratios closer to 4.99 : 1, well above suggested ratio */
@@ -194,21 +246,7 @@ dd {
             font-family: 'Times New Roman', Times, serif;
         
             }
-        
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li a {
-            display: block;
-            width: 100px;
-            background-color: #E6F0F8;
-            margin-bottom: 5px;
-            font-size: 1.50em;
-            text-align: center;
-            }    
+         
 
         img {
                 max-width: 20%;
@@ -252,6 +290,7 @@ dd {
        width: 80%;
        color: black;
 }
+/* archived from useage for Module 6 Flexbox replacement*/
 
 .hosts-format {
     img {
@@ -264,7 +303,9 @@ dd {
     text-align: center;
     font-weight: bold;
 }
+/* archived from useage for Module 6 Flexbox replacement*/
 
+/* archived from useage for Module 6 Flexbox replacement*/
 .host-container {
     border-radius: 10px;
     width: 90%;
@@ -273,6 +314,41 @@ dd {
     margin-left: auto;
     margin-right: auto; 
 }
+/* archived from useage for Module 6 Flexbox replacement*/
+
+/*new Module 6 Host Flexbox. named to be array/gallery of images*/
+
+.gallery-flexbox {
+    width: 75%;
+    background-color: #DCF06F;
+    display: flex;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.figure-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: bold;
+
+    
+        img {
+            max-width: 180px;
+            height: auto;
+            border-radius: 95%;
+            
+        }       
+
+}
+
+
+    figcaption {
+        flex-wrap: wrap;
+        
+}
+
 /* will affect navbar links/appearance */
 
 a:link {
@@ -299,6 +375,8 @@ a:hover {
     width: 50%;
 }
 
-
+.left {
+    align-items: flex-start;
+}
 
 /*  CUSTOM CLASSES DEV AREA */
