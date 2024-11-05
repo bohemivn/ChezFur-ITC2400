@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Store</title>
+	<!-- I opted to use a bootstrap basic template page, with my duplicate style sheet attached to it, and edited to setup a store page -->
+	<!-- Having all this pre-defined content and classes made this a bunch easier to implement- it is a bit tougher mentally when I didn't define them to read through this -->
+	<!-- being able to pick/choose and click delete elements not needed was excellent -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<!-- I think the only thing currently getting inherited from my Dreamweaver.css is the color scheme. Touching Bootstrap css seemed unwise, so I readded elements my CSS should have added on top -->
+    <style type="text/css">
+    @import url("stylesheet/Dreamweaver.css");
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="#">Chez Fur</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item"> </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Everything Else&nbsp; &nbsp; &nbsp;&nbsp;
+                <!-- I'm pretty sure I understand what I'm doing here touching this, we'll see! */ -->
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="menu.html">Menu</a>
+                   <a class="dropdown-item" href="your_hosts.html">Your Hosts</a>
+				   <a class="dropdown-item" href="contact.html">Contact</a>
+				   <a class="dropdown-item" href="adoptions.html">Adoptions</a>
+				   <a class="dropdown-item" href="store.html">Store</a>
+
+                   <div class="dropdown-divider"></div>
+       
+                </div>
+             </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+</form>
+       </div>
+    </nav>
+
+  <img src="images/LogoLarge.png" alt="" width="500" height="133" class="img-fluid" align="right"/>
+    <div class="jumbotron jumbotron-fluid text-center">
+      <h1 class="display-4">&nbsp;</h1>
+      <h1 class="display-4">Support Our Cats!</h1>
+<p class="lead">All profits go directly towards operations/advancement efforts for Chez Fur.</p>
+       <hr class="my-4">
+<img src="images/spree.jpeg" width="800" height="250" alt=""/>    </div>
+    <h5 class="text-uppercase text-center"><strong>Featured products&nbsp;</strong></h5>
+<div class="container"> <br>
+       <hr>
+       <br>
+       <div class="row">
+          <div class="col-md-4">
+             <div class="card">
+                <img class="card-img-top" src="images/patchie.jpeg" alt="Card image cap">
+                <div class="card-body">
+                   <h4 class="card-title">Patchie Plushie&nbsp;</h4>
+                   <p class="card-text">Handcrafted patchwork cat plushies! The cutest and most perfect gift to show your love of cats &amp; support for Chez Fur.&nbsp;</p>
+                   <br><br>
+                   <a href="#" class="btn btn-primary">$45.99&nbsp;</a>
+                </div>
+             </div>
+          </div>
+         <div class="col-md-4">
+            <div class="card"> <img class="card-img-top" src="images/chibucket.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Chibi Litter Bucket</h4>
+                <p class="card-text">5 gallon bucket for storing and sealing litter. Reusable and oh so cute! Ships with a load of our C.F. branded litter.&nbsp;</p>
+                <br>
+                <br>
+                <a href="#" class="btn btn-primary">$22.99&nbsp;</a> </div>
+            </div>
+          </div>
+         <div class="col-md-4">
+           <div class="card"> <img class="card-img-top" src="images/jetkitty.jpeg" alt="Card image cap">
+             <div class="card-body">
+               <h4 class="card-title">Kitty Jetpack&nbsp;&nbsp;</h4>
+               <p class="card-text">Show your cats how much you care. Buy them this fully functional jetpack and send 'em to the moooooon! Rocket fuel not included. Chez Fur assumes no liability for any incidents that occur from your cat exploring unauthorized airspace.&nbsp;&nbsp;</p>
+               <br>
+               <br>
+               <a href="#" class="btn btn-primary">$38,479.99&nbsp;</a></div>
+           </div>
+         </div>
+      </div>
+       <br/>
+       <br/>
+<br/>
+       <br/>
+<br>
+       <hr>
+       <div class="row">
+          <div class="text-center col-lg-6 offset-lg-3">
+            <p>Copyright &copy; 2024 &middot; Suzy Schaffer</p>
+            <p><a href="mailto:fake@thisisnotarealcatcafe.com">fake@thisisnotarealcatcafe.com&nbsp;</a></p>
+          </div>
+       </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

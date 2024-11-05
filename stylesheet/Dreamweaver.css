@@ -1,0 +1,77 @@
+/*********************************************************
+***********************************************************
+Enter rules that apply to ALL screen sizes and ALL pages below.
+Use the wireframe and pay attention to the way tags are
+NESTED to help you place the rules in a logical order --
+much like an outline you create for a paper or presentation
+Example:
+************************************************************/
+/** 10/27 THIS IS NOW THE LARGE/NORMAL SCREEN AREA. 750px +, and the smaller screens will be kept within a media query going forward to clean up CSS**/
+/* Project is now set up for main and 1 media breakpoint for small/mobile devices */
+ /***********************************************************
+    Follow the pattern for the small screen, with appropriate
+    comments to indicate the scope of the rules:
+    ALL LARGE SCREEN rules, followed by
+    RULES FOR INDIVIDUAL PAGES, if any.
+    *************************************************************/
+
+header {
+            
+                
+    width: 100%;
+    min-height: 100px;
+    background-image:url("../images/LogoLarge.png");
+     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+
+    }
+        
+body {
+    background-color: #A2A3F5;
+    color: #3F3A0B;
+    font-family: 'Times New Roman', Times, serif;
+
+
+
+
+/**********************************************************************************************************************
+****************************************************************************************************************************
+**********************************************************************************************************************************
+****************************************************************************************************************************
+***********************************************************************************************************************/
+
+
+    /**********************************************************
+    Enter special rules that apply to ALL SMALL SCREENS ONLY below.
+    Use a logical order!
+    ***********************************************************/
+    @media screen and (max-width: 749px) {
+		
+        header
+        {
+        
+            width: 100%;
+            min-height: 50px;
+            background-image: url("../images/LogoSmall.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right top;
+                
+        }
+
+        body {
+            /** rule here**/
+            /* The colors all come from Adobe color accessibility swatch tool. Additionally, I used their contrast tool to pick 
+            additional colors that looked nicely on backdrops I chose. I added additional colors beyond my forum post after testing -JAB 10/6 */
+            /* using these tools, I was able to get contrast ratios closer to 4.99 : 1, well above suggested ratio */
+        
+            background-color: #DCF06F;
+            color: #1A5FB6;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        
+    }
+        
+     
