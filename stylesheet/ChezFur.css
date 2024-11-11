@@ -278,6 +278,80 @@ a:hover {
 
 /*  CUSTOM CLASSES DEV AREA */
 
+/* CONTACT CLASSES for FORMS */
+
+form {
+  border-radius: 5px;
+  background-color: #428C74;
+  padding: 20px;
+  width: 66%
+}
+
+label {
+	color: black;
+	font-weight: bold
+}
+
+ /* Style text inputs */
+  input[type=text], select {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  font-size: 15px
+
+}
+
+/* Style email inputs */
+  input[type=email], select {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  font-size: 15px
+
+}
+
+/* Style phone inputs */
+  input[type=tel], select {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  font-size: 15px
+
+}
+
+/* submit button */
+input[type=submit] {
+  width: 25%;
+  background-color: #787878;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*background color for submit button on mouse-over */
+input[type=submit]:hover {
+  background-color: black;
+	
+} 
+
 
 /**********************************************************************************************************************
 ****************************************************************************************************************************
@@ -404,6 +478,10 @@ a:hover {
         /* GRIDVIEW BOX CLASSES AND ITEM DEFINITIONS FOR ADOPTIONS PAGE*/
         /* going for 2columnx4row for small screen, putting boxcutter(item 6) (wide) after row 1. sealant (long) (item 3) is column 2, rows 3 and 4 */
         /* honkus is item 1, ogleby 2, industrialgradesealant3b, booper, hummus, boxcutter */
+		
+		
+		
+		
     }
         
      
